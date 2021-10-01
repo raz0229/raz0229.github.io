@@ -1,4 +1,3 @@
-window.alert("This is an old page (Last revision: Nov 2020) and hasn't been updated yet. The skillset listed here might differ greatly from now. Get in touch to learn more about the services I provide");
     (function ($) {
     "use strict"; // Start of use strict
 
