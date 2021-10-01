@@ -1,8 +1,4 @@
-/*!
-    * Start Bootstrap - Grayscale v6.0.3 (https://startbootstrap.com/theme/grayscale)
-    * Copyright 2013-2020 Start Bootstrap
-    * Licensed under MIT (https://github.com/StartBootstrap/startbootstrap-grayscale/blob/master/LICENSE)
-    */
+window.alert("This is an old page (Last revision: Nov 2020) and hasn't been updated yet. The skillset listed here might differ greatly from now. Get in touch to learn more about the services I provide");
     (function ($) {
     "use strict"; // Start of use strict
 
