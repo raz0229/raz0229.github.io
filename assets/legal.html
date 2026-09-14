@@ -1,0 +1,814 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Taash Online Privacy Policy, Terms & Community Rules, and Account Deletion Information.">
+  <title>Taash Online — Legal</title>
+
+  <style>
+    :root {
+      --bg: #0d0d0d;
+      --surface: #151515;
+      --surface-hover: #1c1c1c;
+      --border: #292929;
+      --gold: #c9a24d;
+      --gold-light: #e0bd69;
+      --text: #eeeeee;
+      --muted: #a7a7a7;
+      --max-width: 850px;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      font-family:
+        Inter,
+        -apple-system,
+        BlinkMacSystemFont,
+        "Segoe UI",
+        Roboto,
+        Helvetica,
+        Arial,
+        sans-serif;
+      line-height: 1.7;
+    }
+
+    a {
+      color: var(--gold-light);
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .container {
+      width: min(100% - 32px, var(--max-width));
+      margin: 0 auto;
+    }
+
+    header {
+      padding: 64px 0 42px;
+      text-align: center;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .logo {
+      width: 72px;
+      height: 72px;
+      margin: 0 auto 18px;
+      border-radius: 18px;
+      background: linear-gradient(135deg, #d5ad57, #98752d);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #111;
+      font-size: 34px;
+      font-weight: 900;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: clamp(30px, 6vw, 44px);
+      letter-spacing: -1px;
+    }
+
+    header p {
+      margin: 8px 0 0;
+      color: var(--muted);
+      font-size: 15px;
+    }
+
+    .tabs {
+      position: sticky;
+      top: 0;
+      z-index: 10;
+      background: rgba(13, 13, 13, 0.94);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid var(--border);
+    }
+
+    .tabs-inner {
+      display: flex;
+      gap: 8px;
+      overflow-x: auto;
+      padding: 12px 0;
+      scrollbar-width: none;
+    }
+
+    .tabs-inner::-webkit-scrollbar {
+      display: none;
+    }
+
+    .tab {
+      flex: 0 0 auto;
+      padding: 9px 14px;
+      border: 1px solid var(--border);
+      border-radius: 999px;
+      background: var(--surface);
+      color: var(--muted);
+      font-size: 13px;
+      font-weight: 600;
+    }
+
+    .tab:hover {
+      background: var(--surface-hover);
+      color: var(--text);
+      text-decoration: none;
+      border-color: #3a3a3a;
+    }
+
+    main {
+      padding: 42px 0 70px;
+    }
+
+    section.document {
+      scroll-margin-top: 80px;
+      margin-bottom: 70px;
+    }
+
+    .document-header {
+      margin-bottom: 30px;
+    }
+
+    .document-header h2 {
+      margin: 0 0 8px;
+      font-size: clamp(25px, 5vw, 34px);
+      color: var(--gold-light);
+      letter-spacing: -0.4px;
+    }
+
+    .document-header p {
+      margin: 0;
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    .legal-section {
+      padding: 24px 0;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .legal-section:last-child {
+      border-bottom: none;
+    }
+
+    .legal-section h3 {
+      margin: 0 0 10px;
+      color: var(--gold);
+      font-size: 18px;
+      line-height: 1.4;
+    }
+
+    .legal-section p {
+      margin: 0;
+      color: #d5d5d5;
+      font-size: 15px;
+    }
+
+    ul,
+    ol {
+      margin: 10px 0 0;
+      padding-left: 24px;
+      color: #d5d5d5;
+      font-size: 15px;
+    }
+
+    li {
+      margin: 7px 0;
+    }
+
+    .contact {
+      display: inline-block;
+      margin-top: 6px;
+      padding: 10px 14px;
+      border: 1px solid rgba(201, 162, 77, 0.3);
+      border-radius: 10px;
+      background: rgba(201, 162, 77, 0.06);
+    }
+
+    .notice {
+      padding: 18px 20px;
+      margin: 24px 0 8px;
+      border-left: 3px solid var(--gold);
+      border-radius: 6px;
+      background: var(--surface);
+      color: #d5d5d5;
+      font-size: 14px;
+    }
+
+    footer {
+      padding: 30px 0 45px;
+      border-top: 1px solid var(--border);
+      text-align: center;
+      color: #777;
+      font-size: 13px;
+    }
+
+    @media (max-width: 600px) {
+      header {
+        padding: 45px 0 32px;
+      }
+
+      .container {
+        width: min(100% - 24px, var(--max-width));
+      }
+
+      main {
+        padding-top: 30px;
+      }
+
+      .legal-section {
+        padding: 20px 0;
+      }
+
+      .legal-section p,
+      ul,
+      ol {
+        font-size: 14px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <div class="container">
+    <div class="logo">T</div>
+    <h1>Taash Online</h1>
+    <p>Legal Information</p>
+  </div>
+</header>
+
+<nav class="tabs">
+  <div class="container tabs-inner">
+    <a class="tab" href="#privacy">Privacy Policy</a>
+    <a class="tab" href="#terms">Terms & Rules</a>
+    <a class="tab" href="#deletion">Account Deletion</a>
+  </div>
+</nav>
+
+<main>
+  <div class="container">
+
+    <!-- ========================= -->
+    <!-- PRIVACY POLICY -->
+    <!-- ========================= -->
+
+    <section class="document" id="privacy">
+
+      <div class="document-header">
+        <h2>Privacy Policy</h2>
+        <p>Last updated: 12 September 2026</p>
+      </div>
+
+      <div class="legal-section">
+        <h3>1. Introduction</h3>
+        <p>
+          Taash Online ("the Service") is a card game application developed
+          and operated by SherazTech. This Privacy Policy explains what
+          information we collect when you use the Service, how we use and
+          protect it, and the choices you have. By creating an account and
+          using the Service, you agree to the practices described in this
+          policy.
+        </p>
+      </div>
+
+      <div class="legal-section">
+        <h3>2. Information we collect</h3>
+        <p>
+          We collect the information you give us directly and information
+          generated while you play:
+        </p>
+
+        <ul>
+          <li>
+            <strong>Account information:</strong>
+            the display name, email address, country and avatar you choose
+            when you sign up or edit your profile.
+          </li>
+
+          <li>
+            <strong>Game data:</strong>
+            your matches, scores, virtual-coin balance, profile avatars and
+            other items you earn or buy.
+          </li>
+
+          <li>
+            <strong>Device and usage information:</strong>
+            the type of device and operating system you use, app version,
+            and anonymous usage statistics we use to diagnose issues and
+            improve the Service.
+          </li>
+
+          <li>
+            <strong>Communications:</strong>
+            messages you send us, for example when you contact customer
+            support.
+          </li>
+        </ul>
+
+        <p style="margin-top: 14px;">
+          We do not collect or store payment card numbers. In-app purchases
+          of virtual coins are processed by the store you purchased through
+          (such as the Google Play Store), which provides us only the
+          information needed to credit your account.
+        </p>
+      </div>
+
+      <div class="legal-section">
+        <h3>3. How we use your information</h3>
+
+        <p>We use your information to:</p>
+
+        <ul>
+          <li>Create and manage your account and keep your progress saved.</li>
+          <li>
+            Provide, maintain and improve the Service, including matchmaking,
+            leaderboards and game features.
+          </li>
+          <li>
+            Respond to your support requests and communicate with you about
+            your account.
+          </li>
+          <li>
+            Keep the Service secure, prevent fraud, cheating and abuse, and
+            enforce our rules.
+          </li>
+          <li>Comply with applicable laws and regulations.</li>
+        </ul>
+
+        <p style="margin-top: 14px;">
+          We process your information only for the purposes described here,
+          and for no longer than necessary.
+        </p>
+      </div>
+
+      <div class="legal-section">
+        <h3>4. Sharing your information</h3>
+
+        <p>
+          We do not sell your personal information. We share it only in these
+          limited circumstances:
+        </p>
+
+        <ul>
+          <li>
+            With service providers that help us operate the Service
+            (for example hosting and analytics), who are bound by
+            confidentiality and may use your data only on our behalf.
+          </li>
+
+          <li>
+            With law enforcement or other authorities when we are legally
+            required to do so.
+          </li>
+
+          <li>
+            In connection with a merger, sale or transfer of assets, where
+            the recipient agrees to protect your information under the terms
+            of this policy.
+          </li>
+        </ul>
+      </div>
+
+      <div class="legal-section">
+        <h3>5. Data retention and security</h3>
+
+        <p>
+          We keep your information for as long as your account is active,
+          and for a reasonable period afterwards where needed to meet legal
+          or operational requirements. When you delete your account, we
+          remove or anonymise your personal information unless retention is
+          required by law.
+        </p>
+
+        <p style="margin-top: 14px;">
+          We use technical and organisational measures — including encrypted
+          transmission and restricted access — to protect your data. No
+          method of transmission is completely secure, but we work to keep
+          your information safe.
+        </p>
+      </div>
+
+      <div class="legal-section">
+        <h3>6. Your rights and choices</h3>
+
+        <p>
+          You can access and update your profile at any time in the app.
+          Depending on where you live, you may also have the right to ask
+          for a copy of your personal information, to correct it, to request
+          its deletion, or to object to its processing. To exercise these
+          rights, contact us using the details below.
+        </p>
+      </div>
+
+      <div class="legal-section">
+        <h3>7. Children's privacy</h3>
+
+        <p>
+          The Service is not directed to children. We do not knowingly
+          collect personal information from anyone under the age of 13.
+          If you believe a child has provided us with personal information,
+          contact us and we will delete it.
+        </p>
+      </div>
+
+      <div class="legal-section">
+        <h3>8. Changes to this policy</h3>
+
+        <p>
+          We may update this Privacy Policy from time to time. When we make
+          material changes, we will update the date below and, where
+          appropriate, notify you in the app. Continued use of the Service
+          after changes are posted means you accept the updated policy.
+        </p>
+
+        <div class="notice">
+          Last updated: 12 September 2026.
+        </div>
+      </div>
+
+      <div class="legal-section">
+        <h3>9. Contact us</h3>
+
+        <p>
+          If you have questions about this policy or how your information
+          is handled, contact us at:
+        </p>
+
+        <div class="contact">
+          <a href="mailto:sheraztech229@gmail.com">
+            sheraztech229@gmail.com
+          </a>
+        </div>
+      </div>
+
+    </section>
+
+
+    <!-- ========================= -->
+    <!-- TERMS & COMMUNITY RULES -->
+    <!-- ========================= -->
+
+    <section class="document" id="terms">
+
+      <div class="document-header">
+        <h2>Terms & Community Rules</h2>
+        <p>Last updated: 12 September 2026</p>
+      </div>
+
+      <div class="legal-section">
+        <h3>1. Acceptance of terms</h3>
+
+        <p>
+          By downloading, accessing or playing Taash Online, you agree to be
+          bound by these Terms & community rules ("Terms"). If you do not
+          agree, please do not use the Service. These Terms form a contract
+          between you and SherazTech.
+        </p>
+      </div>
+
+      <div class="legal-section">
+        <h3>2. Eligibility</h3>
+
+        <p>
+          You must be at least 13 years old to use the Service, and at least
+          18 years old (or the age of majority in your country) to make
+          purchases. If you are under the age of majority, you confirm that
+          a parent or guardian has reviewed and accepted these Terms on
+          your behalf.
+        </p>
+      </div>
+
+      <div class="legal-section">
+        <h3>3. Your account</h3>
+
+        <p>
+          You are responsible for keeping your account details accurate and
+          for protecting your login credentials. You may not share your
+          account, sell or transfer accounts, or allow another person to
+          play on your behalf.
+        </p>
+
+        <p style="margin-top: 14px;">
+          You are responsible for all activity that happens through your
+          account. Use one account only — multiple accounts, for example to
+          change your identity or to gain an unfair advantage, are not
+          allowed.
+        </p>
+      </div>
+
+      <div class="legal-section">
+        <h3>4. Virtual coins and purchases</h3>
+
+        <p>
+          Virtual coins are in-app items with no real-world money value and
+          no cash redemption. When you open a round or enter a game, your
+          entry fee is collected using virtual coins.
+        </p>
+
+        <p style="margin-top: 14px;">
+          Refunds of in-app purchases are governed by the store where the
+          purchase was made (for example the Google Play Store) and
+          applicable law.
+        </p>
+
+        <p style="margin-top: 14px;">
+          Virtual coins shown in your balance are provided for your personal
+          entertainment; they cannot be withdrawn, transferred or converted
+          to real currency, and they have no value outside the Service.
+        </p>
+      </div>
+
+      <div class="legal-section">
+        <h3>5. Fair play</h3>
+
+        <p>
+          We want every round to be honest and fun. You agree not to:
+        </p>
+
+        <ul>
+          <li>Use bots, automation or unauthorised third-party software.</li>
+          <li>
+            Collude with other players to manipulate a game or its outcome.
+          </li>
+          <li>
+            Exploit bugs, glitches or errors to gain an unfair advantage.
+          </li>
+          <li>
+            Attempt to read, extract or interfere with game data you are not
+            meant to see.
+          </li>
+        </ul>
+
+        <p style="margin-top: 14px;">
+          We reserve the right to correct game results caused by technical
+          errors and to take action, including removing virtual coins,
+          suspending or terminating accounts that violate these rules.
+        </p>
+      </div>
+
+      <div class="legal-section">
+        <h3>6. Conduct</h3>
+
+        <p>
+          Be respectful. You agree not to post, send or promote anything
+          that is unlawful, abusive, harassing, defamatory, hateful or
+          sexually explicit, and not to spam, impersonate others, or attempt
+          to disrupt the Service. Accounts reported for abusive behaviour
+          may be restricted.
+        </p>
+      </div>
+
+      <div class="legal-section">
+        <h3>7. Intellectual property</h3>
+
+        <p>
+          The Service — including all graphics, artwork, sounds, text,
+          software and the Taash Online name — is owned by SherazTech or its
+          licensors and is protected by intellectual property laws.
+        </p>
+
+        <p style="margin-top: 14px;">
+          You may not copy, modify, distribute or create derivative works
+          from any part of the Service without our permission.
+        </p>
+      </div>
+
+      <div class="legal-section">
+        <h3>8. Disclaimers</h3>
+
+        <p>
+          The Service is provided "as is" and "as available" for your
+          entertainment. To the maximum extent permitted by law, we make no
+          warranties about its availability, reliability or fitness for a
+          particular purpose.
+        </p>
+
+        <p style="margin-top: 14px;">
+          We may update, suspend or withdraw the Service, or features within
+          it, at any time.
+        </p>
+      </div>
+
+      <div class="legal-section">
+        <h3>9. Limitation of liability</h3>
+
+        <p>
+          To the maximum extent permitted by law, SherazTech will not be
+          liable for indirect, incidental, special or consequential damages,
+          or for any loss of data, virtual items or profits, arising out of
+          your use of the Service. Nothing in these Terms limits liability
+          that cannot be limited by law.
+        </p>
+      </div>
+
+      <div class="legal-section">
+        <h3>10. Termination</h3>
+
+        <p>
+          We may suspend or terminate your access to the Service, and
+          deactivate your account, if you breach these Terms or if we are
+          required to do so by law.
+        </p>
+
+        <p style="margin-top: 14px;">
+          You may stop using the Service at any time, and you can delete
+          your account from Settings or by contacting us.
+        </p>
+      </div>
+
+      <div class="legal-section">
+        <h3>11. Changes to these terms</h3>
+
+        <p>
+          We may revise these Terms from time to time. Material changes will
+          be reflected by an updated date below and, where appropriate, a
+          notice in the app. Your continued use of the Service after changes
+          are posted means you accept the updated Terms.
+        </p>
+
+        <div class="notice">
+          Last updated: 12 September 2026.
+        </div>
+      </div>
+
+      <div class="legal-section">
+        <h3>12. Contact us</h3>
+
+        <p>
+          Questions about these Terms? Contact us at:
+        </p>
+
+        <div class="contact">
+          <a href="mailto:sheraztech229@gmail.com">
+            sheraztech229@gmail.com
+          </a>
+        </div>
+      </div>
+
+    </section>
+
+
+    <!-- ========================= -->
+    <!-- ACCOUNT DELETION -->
+    <!-- ========================= -->
+
+    <section class="document" id="deletion">
+
+      <div class="document-header">
+        <h2>Account Deletion Information</h2>
+        <p>Taash Online</p>
+      </div>
+
+      <div class="legal-section">
+        <h3>1. How to delete your account</h3>
+
+        <p>
+          You can delete your account directly in the app:
+        </p>
+
+        <ol>
+          <li>Open the Settings screen from the home tab.</li>
+          <li>Scroll to the bottom and tap <strong>"Delete account"</strong>.</li>
+          <li>Confirm that you want to delete your account.</li>
+        </ol>
+
+        <p style="margin-top: 14px;">
+          You will be signed out immediately and your account will be
+          scheduled for deletion.
+        </p>
+
+        <p style="margin-top: 14px;">
+          If you run into any problem, you can also request deletion by
+          emailing
+          <a href="mailto:sheraztech229@gmail.com">
+            sheraztech229@gmail.com
+          </a>
+          from the address linked to your account.
+        </p>
+      </div>
+
+      <div class="legal-section">
+        <h3>2. What gets deleted</h3>
+
+        <p>
+          When your account is deleted, the following is removed from the
+          Service:
+        </p>
+
+        <ul>
+          <li>Your profile, display name and email address.</li>
+          <li>Your virtual-coin balance, avatars and all in-app items.</li>
+          <li>Your game history, match records and leaderboard entries.</li>
+        </ul>
+
+        <p style="margin-top: 14px;">
+          Deletion is permanent and cannot be undone. You will not be able
+          to sign in to the deleted account again.
+        </p>
+      </div>
+
+      <div class="legal-section">
+        <h3>3. What may be retained</h3>
+
+        <p>
+          A small amount of information may be kept for a limited period
+          where we are required to by law or for legitimate business
+          reasons, such as:
+        </p>
+
+        <ul>
+          <li>Records of purchases, for refund and tax obligations.</li>
+          <li>Records needed to prevent fraud, cheating or abuse.</li>
+          <li>
+            Information required by applicable law or legal proceedings.
+          </li>
+        </ul>
+
+        <p style="margin-top: 14px;">
+          Any retained data is stored securely, is used only for those
+          purposes, and is deleted as soon as those obligations end.
+        </p>
+      </div>
+
+      <div class="legal-section">
+        <h3>4. How long it takes</h3>
+
+        <p>
+          Deletion is processed automatically and is usually completed within
+          a few days. In some cases — for example when a deletion is reviewed
+          for compliance reasons — it can take up to 30 days.
+        </p>
+
+        <p style="margin-top: 14px;">
+          We will not process purchases or wins under an account that has
+          been deleted.
+        </p>
+      </div>
+
+      <div class="legal-section">
+        <h3>5. Before you delete</h3>
+
+        <p>
+          Please consider the following before deleting your account:
+        </p>
+
+        <ul>
+          <li>
+            Virtual coins and avatars cannot be transferred to another
+            account and are not refundable.
+          </li>
+          <li>
+            You will lose access to any pending or in-progress matches.
+          </li>
+          <li>
+            You will need to create a brand-new account if you want to play
+            again afterwards.
+          </li>
+        </ul>
+      </div>
+
+      <div class="legal-section">
+        <h3>6. Questions</h3>
+
+        <p>
+          If you have any questions about account deletion, personal data
+          or this information, contact us at:
+        </p>
+
+        <div class="contact">
+          <a href="mailto:sheraztech229@gmail.com">
+            sheraztech229@gmail.com
+          </a>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+</main>
+
+<footer>
+  <div class="container">
+    © 2026 SherazTech · Taash Online
+  </div>
+</footer>
+
+</body>
+</html>
+```
